@@ -1,6 +1,4 @@
 <?php require 'partials/head.php'; ?>
-
-<div id="wrapper">
 	
 	<div id="sidebar">
 
@@ -9,7 +7,7 @@
 			<li><a href="delete-thread">Delete Thread</a></li>
 		</ul>
 
-	</div>
+	</div><!-- sidebar -->
 
 	<div id="content">
 		
@@ -20,8 +18,6 @@
 			Forum_Post::show($posts);
 		?>
 		
-	</div>
-	
-</div>
+	</div><!-- content -->
 
 <?php require 'partials/footer.php'; ?>

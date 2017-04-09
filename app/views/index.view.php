@@ -1,13 +1,17 @@
 <?php require 'partials/head.php'; ?>
 
-<h1>The Realm Project Home</h1>
+<div id="content">
+	
+	<h1>The Realm Project Home</h1>
 
-<form method="POST" action="add-user" >
+	<form method="POST" action="add-user" >
+		
+		<label for="username">Enter your name</label><br>
+		<input type="text" id="username" name="username" placeholder="Username..."><br>
+		
+		<input type="submit"><br>
+	</form>
 	
-	<label for="username">Enter your name</label><br>
-	<input type="text" id="username" name="username" placeholder="Username..."><br>
-	
-	<input type="submit"><br>
-</form>
+</div><!-- content -->
 
 <?php require 'partials/footer.php'; ?>
