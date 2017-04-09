@@ -28,8 +28,8 @@ h1 {
 }
 
 #nav {
-  background-color: #004;
-  border-bottom: 1px solid #444;
+  background-color: #005;
+  border-bottom: 1px solid #005;
   margin: 0px;
   padding: 0px;
   list-style-type: none;
@@ -47,11 +47,11 @@ h1 {
   text-decoration: none;
   padding: 12px 20px;
   display: block;
-  color: #00F;
+  color: #0CC;
 }
 
 #nav li a:hover {
-  background-color: #004;
-  color: #0F0;
+  background-color: #0CC;
+  color: #005;
 }
 

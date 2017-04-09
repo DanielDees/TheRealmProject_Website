@@ -1,7 +1,7 @@
 "use strict";
 
 //VERSION INFO
-var versionInfo = "Version 1.2.F";
+var versionInfo = "Version 1.2.G";
 
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");

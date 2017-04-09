@@ -12,7 +12,7 @@ class Forum_Post {
 					<li class = 'forum-post-id'><b>Thread #</b>" . $thread->id . "</li>
 					<li class = 'forum-post-title'><b>Title: </b>" . $thread->title . "</li>
 					<li class = 'forum-post-content'>
-						<p>" . $thread->content . "</p>
+						<p>" . nl2br($thread->content, 1) . "</p>
 					</li>
 				</ul>";
 		};
