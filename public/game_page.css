@@ -1,0 +1,57 @@
+body {
+  background-color: #000;
+  margin: 0;
+}
+
+canvas {
+  position: fixed;
+  width: 800px; 
+  height: 600px;
+  left: 50%;
+  top: 400px;
+  margin-left: -400px;
+  margin-top: -300px;
+  cursor: default;
+	border: 1px solid #c3c3c3;
+
+  image-rendering: optimizeSpeed;             /* Older versions of FF */
+  image-rendering: -moz-crisp-edges;          /* FF 6.0+ */
+  image-rendering: -webkit-optimize-contrast; /* Webkit (non standard naming) */
+  image-rendering: -o-crisp-edges;            /* OS X & Windows Opera (12.02+) */
+  image-rendering: crisp-edges;               /* Possible future browsers. */
+  -ms-interpolation-mode: nearest-neighbor;   /* IE (non standard naming) */
+}
+
+h1 {
+  margin-left: 20px;
+  color: #E00;
+}
+
+#nav {
+  background-color: #004;
+  border-bottom: 1px solid #444;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  overflow: hidden;
+  font-family: "Arial";
+}
+
+#nav li {
+  float: left;
+  font-size: 18px;
+  text-align: center;
+}
+
+#nav li a {
+  text-decoration: none;
+  padding: 12px 20px;
+  display: block;
+  color: #00F;
+}
+
+#nav li a:hover {
+  background-color: #004;
+  color: #0F0;
+}
+
