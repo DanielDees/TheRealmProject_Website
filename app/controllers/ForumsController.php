@@ -8,10 +8,10 @@ class ForumsController {
 	public function add_thread() {
 
 		//Add any thread posts
-		if (!empty($_POST["title"]) && !empty($_POST["content"])) {
-			App::get('database')->insert('todo', [
-					'title' => $_POST["title"],
-					'content' => $_POST["content"]
+		if (!empty($_POST['title']) && !empty($_POST['content'])) {
+			App::get('database')->insert('forum', [
+					'title' => $_POST['title'],
+					'content' => $_POST['content']
 				]);
 		}
 
@@ -21,16 +21,16 @@ class ForumsController {
 	public function delete_thread() {
 
 		//Delete by title
-		if (!empty($_POST["deleteTitle"])) {
-			App::get('database')->delete('todo', 'title', $_POST["deleteTitle"]); 
+		if (!empty($_POST['title'])) {
+			App::get('database')->delete('forum', 'title', $_POST['title']); 
 		}
 		//Delete by content 
-		if (!empty($_POST["deleteContent"])) {
-			App::get('database')->delete('todo', 'content', $_POST["deleteContent"]); 
+		if (!empty($_POST['content'])) {
+			App::get('database')->delete('forum', 'content', $_POST['content']); 
 		}
 		//Delete by ID #
-		if (!empty($_POST["deleteId"])) {
-			App::get('database')->delete('todo', 'id', $_POST["deleteId"]);
+		if (!empty($_POST['id'])) {
+			App::get('database')->delete('forum', 'id', $_POST['id']);
 		}
 
 		redirect('forums');

@@ -17,7 +17,7 @@ class PagesController {
 		$pageTitle = "Forums";
 
 		//Get all thread posts
-		$posts = App::get('database')->selectAll('todo');
+		$posts = App::get('database')->selectAll('forum');
 
 		require view('forums', ['pageTitle' => $pageTitle]);
 	}

@@ -16,9 +16,15 @@ class UsersController {
 
 	public function store() {
 
-		App::get('database')->insert('users', [ 
-				'username' => $_POST['username'],
-			]);
+		if (!empty($_POST['username']) && !empty($_POST['password'])) {
+			App::get('database')->insert('users', [ 
+					'username' => $_POST['username'],
+					'password' => password_hash(
+								$_POST['password'], 
+								PASSWORD_DEFAULT
+							)
+				]);			
+		}
 
 		redirect('about');
 	}
